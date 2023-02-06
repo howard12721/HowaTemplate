@@ -1,5 +1,6 @@
 package com.howaky.howatemplate;
 
+import com.github.howard12721.howalib.HowaLib;
 import com.howaky.howatemplate.config.Settings;
 import lombok.Getter;
 import net.william278.annotaml.Annotaml;
@@ -24,11 +25,13 @@ public final class HowaTemplate extends JavaPlugin {
 
         saveDefaultConfig();
         loadConfig();
+
+        HowaLib.initialize(this);
     }
 
     @Override
     public void onDisable() {
-
+        HowaLib.dispose();
     }
 
     private void loadConfig() throws RuntimeException {
