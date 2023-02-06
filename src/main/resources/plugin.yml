@@ -1,0 +1,5 @@
+name: HowaTemplate
+version: '${project.version}'
+main: com.howaky.howatemplate.HowaTemplate
+api-version: 1.19
+authors: [ howard127 ]
